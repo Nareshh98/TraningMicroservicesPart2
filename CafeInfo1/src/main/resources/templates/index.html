@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>CafeInfo</title>
+<style>
+body {background:indianred;}
+.main {text-align:center;margin:0 auto;width:50%;}
+input[type=submit] {align:center;margin: 0 auto;display:block;} 
+  
+</style>
+</head>
+<body>
+<div class="main">
+<h1>Welcome to the CafeInfo Service</h1>
+<form name="add" action="/addCafe" method="POST">
+<table border="1">
+<tr><th colspan="2">Add Cafe</th></tr>
+<tr><td>Cafe Name</td><td><input type="text" name="cafeName" required/></td></tr>
+<tr><td>Cafe Description</td><td><input type="text" name="cafeDesc" required/></td></tr>
+<tr><td colspan="2"><input type="submit" name="submit" value="submit"/></td></tr> 
+</table>
+</form>
+</div>
+</body>
+</html>

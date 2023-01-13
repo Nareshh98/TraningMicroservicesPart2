@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>CafeReview</title>
+<style>
+body {background:slategray;color:white;}
+.main {text-align:center;margin:0 auto;width:50%;}
+input[type=submit] {align:center;margin: 0 auto;display:block;} 
+  
+</style>
+</head>
+<body>
+<div class="main">
+<h1>Welcome to the CafeReview Service</h1>
+<form name="add" action="/addReview" method="POST">
+<table border="1">
+<tr><th colspan="2">Add Review</th></tr>
+<tr><td>Cafe Id</td><td><input type="number" name="cafeId" required/></td></tr>
+<tr><td>Cafe Rating</td><td><input type="number" name="cafeRating" min="1" max="5" required/></td></tr>
+<tr><td>Cafe Remarks</td><td><input type="text" name="cafeRemarks" required/></td></tr>
+<tr><td colspan="2"><input type="submit" name="submit" value="submit"/></td></tr> 
+</table>
+</form>
+</div>
+</body>
+</html>
